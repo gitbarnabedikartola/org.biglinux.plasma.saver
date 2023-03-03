@@ -32,7 +32,7 @@ Item {
     property string importPath: null
     property string configPath : StandardPaths.standardLocations(StandardPaths.GenericConfigLocation)[0].split("//")[1]
     property string dataPath : StandardPaths.standardLocations(StandardPaths.GenericDataLocation)[0].split("//")[1]
-    property string scriptPath : /usr/share
+    property string scriptPath : "/usr/share"
     property string savePath: configPath + "/plasmaConfSaver"
     property string modelData : null
 
