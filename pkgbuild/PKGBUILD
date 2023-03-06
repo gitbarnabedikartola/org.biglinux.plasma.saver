@@ -1,11 +1,11 @@
 # Maintainer: Barnabé di Kartola <barnabedikartola@gmail.com>
 
-pkgname=org.kde.plasma.confsaver
+pkgname=org.biglinux.plasma.saver
 pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 pkgdesc="Backup das configurações do Plasma"
 arch=('any')
-# url="https://github.com/UaiSO21/$pkgname"
+# url="https://github.com/biglinux/$pkgname"
 url="https://github.com/gitbarnabedikartola/$pkgname"
 license=('GPL3')
 depends=('spectacle' 'kdialog' 'konsole' 'coreutils' 'tar')

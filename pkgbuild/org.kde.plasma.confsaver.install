@@ -9,6 +9,7 @@ users=$(ls /home)
 for i in $users; do 
 	mkdir -p /home/$users/.config/plasmaConfSaver
 	cp -r /usr/share/plasma/plasmoids/com.pajuelo.plasmaConfSaver/examples/* /home/$users/.config/plasmaConfSaver/
+	chown $users:$users -R /home/$users/.config/plasmaConfSaver/
 done
 }
 
