@@ -33,7 +33,7 @@ Item {
     property string configPath : StandardPaths.standardLocations(StandardPaths.GenericConfigLocation)[0].split("//")[1]
     property string dataPath : StandardPaths.standardLocations(StandardPaths.GenericDataLocation)[0].split("//")[1]
     property string scriptPath : "/usr/share"
-    property string savePath: configPath + "/plasmaConfSaver"
+    property string savePath: configPath + "/biglinuxPlasmaSaver"
     property string modelData : null
 
     Layout.minimumWidth: widgetWidth + 200
@@ -124,10 +124,10 @@ Item {
                         if(text1.text == "" || text1.text == null || text1.text == undefined) {
                             text1.text = "default"
                         }
-                        var plasmaConfSaverFolder = configPath + "/plasmaConfSaver/";
+                        var plasmaConfSaverFolder = configPath + "/biglinuxPlasmaSaver/";
                         var configFolder = plasmaConfSaverFolder + text1.text;
 
-                        var saveScript = scriptPath+"/plasma/plasmoids/com.pajuelo.plasmaConfSaver/contents/scripts/save.sh";
+                        var saveScript = scriptPath+"/plasma/plasmoids/org.biglinux.plasma.saver/contents/scripts/save.sh";
                         loadMask.visible = true;
                         col1.enabled = false;
 
@@ -312,7 +312,7 @@ Item {
                                     loadMask.visible = true;
                                     col1.enabled = false;
 
-                                    var loadScript = scriptPath+"/plasma/plasmoids/com.pajuelo.plasmaConfSaver/contents/scripts/load.sh";
+                                    var loadScript = scriptPath+"/plasma/plasmoids/org.biglinux.plasma.saver/contents/scripts/load.sh";
 
                                    executeSource.connectSource("cp " + loadScript + " " + savePath + "/load.sh && nohup sh "+ savePath + "/load.sh "+ configPath + " " + savePath + " " + dataPath + " " + model.modelData + " &")
 

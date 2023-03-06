@@ -2,7 +2,7 @@ configPath=$1
 configFolder=$2
 dataPath=$3
 
-mkdir "$configPath/plasmaConfSaver/"
+mkdir "$configPath/biglinuxPlasmaSaver/"
 rm -Rf "$configFolder"
 mkdir "$configFolder"
 

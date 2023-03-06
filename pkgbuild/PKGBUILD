@@ -36,5 +36,5 @@ package() {
 }
 
 post_install() {
-  sh /usr/share/plasma/plasmoids/com.pajuelo.plasmaConfSaver/translate/build.sh --restartplasma
+  sh /usr/share/plasma/plasmoids/org.biglinux.plasma.saver/translate/build.sh --restartplasma
 }
